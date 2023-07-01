@@ -1,4 +1,4 @@
-package com.hpperc;
+package com;
 import com.google.common.base.Predicates;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -23,6 +23,4 @@ public class Application extends SpringBootServletInitializer {
                 .apis(Predicates.not(RequestHandlerSelectors.basePackage("org.springframework.boot")))
                 .paths(PathSelectors.any()).build();
     }
-
-
 }
